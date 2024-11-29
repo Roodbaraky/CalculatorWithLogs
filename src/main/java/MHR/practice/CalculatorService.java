@@ -38,7 +38,6 @@ public class CalculatorService {
 
         try {
             Object result = scriptEngine.eval(expression);
-            System.out.println(result);
             if (result instanceof Number && !isInfinite((Double) result)) {
                 return new CalculationResult(((Number) result).doubleValue());
             } else {
