@@ -1,6 +1,6 @@
 package MHR.practice;
 
-public class CalculationException extends RuntimeException{
+public class CalculationException extends RuntimeException {
     public CalculationException(String message) {
         super(message);
     }

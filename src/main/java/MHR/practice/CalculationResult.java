@@ -7,7 +7,7 @@ import jakarta.json.bind.annotation.JsonbProperty;
 
 public class CalculationResult {
     @JsonbProperty("result")
-    private Double result;
+    private Double result=0.0;
     private String errorMessage;
     private String stackTrace;
 
