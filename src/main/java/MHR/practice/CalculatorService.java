@@ -24,6 +24,7 @@ public class CalculatorService {
 
         try {
             Object result = scriptEngine.eval(expression);
+            System.out.println(result);
             if (result instanceof Number) {
                 return new CalculationResult(((Number) result).doubleValue());
             } else {

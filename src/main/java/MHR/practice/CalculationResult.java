@@ -3,7 +3,10 @@ package MHR.practice;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
+import jakarta.json.bind.annotation.JsonbProperty;
+
 public class CalculationResult {
+    @JsonbProperty("result")
     private Double result;
     private String errorMessage;
     private String stackTrace;
